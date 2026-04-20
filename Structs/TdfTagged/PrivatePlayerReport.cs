@@ -7,7 +7,7 @@ namespace ZamboniCommonComponents.Structs.TdfTagged
     {
 
         [TdfMember("PIAM")]
-        public SortedDictionary<string, ulong> mPrivateIntAttributeMap;
+        public SortedDictionary<string, long> mPrivateIntAttributeMap;
         
         [TdfMember("PPAM")]
         public SortedDictionary<string, string> mPrivateAttributeMap;

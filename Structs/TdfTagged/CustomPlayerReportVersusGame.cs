@@ -7,88 +7,88 @@ namespace ZamboniCommonComponents.Structs.TdfTagged
     {
 
         [TdfMember("BAG")]
-        public uint mBAG;
+        public int mBAG;
         
         [TdfMember("BAO")]
-        public uint mBAO;
+        public int mBAO;
         
         [TdfMember("BS")]
-        public uint mBS;
+        public int mBS;
         
         [TdfMember("FO")]
-        public uint mFO;
+        public int mFO;
         
         [TdfMember("FOL")]
-        public uint mFOL;
+        public int mFOL;
         
         [TdfMember("HITS")]
-        public uint mHITS;
+        public int mHITS;
         
         [TdfMember("LOGA")]
-        public uint mLOGA;
+        public int mLOGA;
         
         [TdfMember("LOGF")]
-        public uint mLOGF;
+        public int mLOGF;
         
         [TdfMember("OTG")]
-        public uint mOTG;
+        public int mOTG;
         
         [TdfMember("OTO")]
-        public uint mOTO;
+        public int mOTO;
         
         [TdfMember("PIMS")]
-        public uint mPIMS;
+        public int mPIMS;
         
         [TdfMember("PPG")]
-        public uint mPPG;
+        public int mPPG;
         
         [TdfMember("PPGA")]
-        public uint mPPGA;
+        public int mPPGA;
         
         [TdfMember("PPO")]
-        public uint mPPO;
+        public int mPPO;
         
         [TdfMember("PSA")]
-        public uint mPSA;
+        public int mPSA;
         
         [TdfMember("PSG")]
-        public uint mPSG;
+        public int mPSG;
         
         [TdfMember("PSSA")]
-        public uint mPSSA;
+        public int mPSSA;
         
         [TdfMember("PSSC")]
-        public uint mPSSC;
+        public int mPSSC;
         
         [TdfMember("SHG")]
-        public uint mSHG;
+        public int mSHG;
         
         [TdfMember("SHGA")]
-        public uint mSHGA;
+        public int mSHGA;
         
         [TdfMember("SHTA")]
-        public uint mSHTA;
+        public int mSHTA;
         
         [TdfMember("SHTS")]
-        public uint mSHTS;
+        public int mSHTS;
         
         [TdfMember("SKLV")]
-        public uint mSKLV;
+        public int mSKLV;
         
         [TdfMember("SO")]
-        public uint mSO;
+        public int mSO;
         
         [TdfMember("TOA")]
-        public uint mTOA;
+        public int mTOA;
         
         [TdfMember("TSH")]
-        public uint mTSH;
+        public int mTSH;
         
         [TdfMember("WIGA")]
-        public uint mWIGA;
+        public int mWIGA;
         
         [TdfMember("WIGF")]
-        public uint mWIGF;
+        public int mWIGF;
         
     }
 }

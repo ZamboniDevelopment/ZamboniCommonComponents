@@ -7,28 +7,28 @@ namespace ZamboniCommonComponents.Structs.TdfTagged
     {
 
         [TdfMember("CDNF")]
-        public uint mCDNF;
+        public int mCDNF;
         
         [TdfMember("CHT")]
-        public ushort mCHT;
+        public short mCHT;
         
         [TdfMember("CPRT")]
         public object? mCustomPlayerReport;
         
         [TdfMember("CSCO")]
-        public uint mCSCO;
+        public int mCSCO;
         
         [TdfMember("CTRY")]
-        public ushort mCTRY;
+        public short mCTRY;
         
         [TdfMember("DISC")]
-        public ushort mDISC;
+        public short mDISC;
         
         [TdfMember("FHRN")]
-        public uint mFHRN;
+        public int mFHRN;
         
         [TdfMember("GRLT")]
-        public uint mGRLT;
+        public int mGRLT;
         
         [TdfMember("GTAG")]
         public string mGTAG;
@@ -37,67 +37,67 @@ namespace ZamboniCommonComponents.Structs.TdfTagged
         public bool mHOME;
         
         [TdfMember("LOSS")]
-        public uint mLOSS;
+        public int mLOSS;
         
         [TdfMember("NAME")]
         public string mNAME;
         
         [TdfMember("OPCT")]
-        public uint mOPCT;
+        public int mOPCT;
         
         [TdfMember("OPPR")]
         public PrivatePlayerReport mPrivatePlayerReport;
         
         [TdfMember("OTL")]
-        public uint mOTL;
+        public int mOTL;
         
         [TdfMember("PEID")]
-        public ulong mPEID;
+        public long mPEID;
         
         [TdfMember("PNID")]
-        public ulong mPNID;
+        public long mPNID;
         
         [TdfMember("PPNA")]
         public string mPPNA;
         
         [TdfMember("PTAG")]
-        public uint mPTAG;
+        public int mPTAG;
         
         [TdfMember("QUIT")]
-        public ushort mQUIT;
+        public short mQUIT;
         
         [TdfMember("RELT")]
-        public uint mRELT;
+        public int mRELT;
         
         [TdfMember("SCOR")]
-        public uint mSCOR;
+        public int mSCOR;
         
         [TdfMember("SERG")]
-        public ushort mSERG;
+        public short mSERG;
         
         [TdfMember("SKIL")]
-        public uint mSKIL;
+        public int mSKIL;
         
         [TdfMember("SKPT")]
-        public uint mSKPT;
+        public int mSKPT;
         
         [TdfMember("TEAM")]
-        public uint mTEAM;
+        public int mTEAM;
         
         [TdfMember("TIES")]
-        public uint mTIES;
+        public int mTIES;
         
         [TdfMember("TNAM")]
         public string mTNAM;
         
         [TdfMember("WDNF")]
-        public uint mWDNF;
+        public int mWDNF;
         
         [TdfMember("WGHT")]
-        public uint mWGHT;
+        public int mWGHT;
         
         [TdfMember("WINS")]
-        public uint mWINS;
+        public int mWINS;
 
     }
 }

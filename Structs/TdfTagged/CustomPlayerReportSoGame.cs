@@ -7,19 +7,19 @@ namespace ZamboniCommonComponents.Structs.TdfTagged
     {
 
         [TdfMember("GA")]
-        public uint mGA;
+        public int mGA;
         
         [TdfMember("GF")]
-        public uint mGF;
+        public int mGF;
         
         [TdfMember("SHTA")]
-        public uint mSHTA;
+        public int mSHTA;
         
         [TdfMember("SHTS")]
-        public uint mSHTS;
+        public int mSHTS;
         
         [TdfMember("SKLV")]
-        public uint mSKLV;
+        public int mSKLV;
         
     }
 }

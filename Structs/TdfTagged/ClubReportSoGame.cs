@@ -7,7 +7,7 @@ namespace ZamboniCommonComponents.Structs.TdfTagged
     {
 
         [TdfMember("CBID")]
-        public uint mCBID;
+        public int mCBID;
         
     }
 }

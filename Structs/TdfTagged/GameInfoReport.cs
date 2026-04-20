@@ -13,55 +13,55 @@ namespace ZamboniCommonComponents.Structs.TdfTagged
         public object? mClubReport;
         
         [TdfMember("CTID")]
-        public uint mCTID;
+        public int mCTID;
         
         [TdfMember("GRID")]
         public ulong mGRID;
         
         [TdfMember("GTIM")]
-        public uint mGTIM;
+        public int mGTIM;
         
         [TdfMember("ISIM")]
         public bool mISIM;
         
         [TdfMember("LGID")]
-        public uint mLGID;
+        public int mLGID;
         
         [TdfMember("NPER")]
-        public ushort mNPER;
+        public short mNPER;
         
         [TdfMember("OVRT")]
-        public uint mOVRT;
+        public int mOVRT;
         
         [TdfMember("PLEN")]
-        public ushort mPLEN;
+        public short mPLEN;
         
         [TdfMember("RANK")]
         public bool mRANK;
         
         [TdfMember("ROID")]
-        public uint mROID;
+        public int mROID;
         
         [TdfMember("SEID")]
-        public uint mSEID;
+        public int mSEID;
         
         [TdfMember("SHOO")]
-        public uint mSHOO;
+        public int mSHOO;
         
         [TdfMember("SKIL")]
-        public ushort mSKIL;
+        public short mSKIL;
         
         [TdfMember("SKU")]
-        public ushort mSKU;
+        public short mSKU;
         
         [TdfMember("STUS")]
-        public uint mSTUS;
+        public int mSTUS;
         
         [TdfMember("TYPE")]
         public string mTYPE;
         
         [TdfMember("VENU")]
-        public ushort mVENU;
+        public short mVENU;
 
     }
 }

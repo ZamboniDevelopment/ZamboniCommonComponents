@@ -16,7 +16,7 @@ namespace ZamboniCommonComponents.Structs.TdfTagged
         public object? mIFPR;
         
         [TdfMember("PLYR")]
-        public SortedDictionary<long, PlayerReport> mPlayerReports;
+        public SortedDictionary<ulong, PlayerReport> mPlayerReports;
         
         [TdfMember("TAMR")]
         public object? mTAMR;
