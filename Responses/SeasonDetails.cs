@@ -22,7 +22,7 @@ public struct SeasonDetails
     public long mRegularSeasonStart;
 
     [TdfMember("SID")] 
-    public uint mSeasonID;
+    public uint mSeasonId;
     
     [TdfMember("SNUM")] 
     public uint mSeasonNumber;
