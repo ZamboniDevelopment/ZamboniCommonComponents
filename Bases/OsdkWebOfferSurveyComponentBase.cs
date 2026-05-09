@@ -3,6 +3,7 @@ using BlazeCommon;
 using NLog;
 using ZamboniCommonComponents.Requests;
 using ZamboniCommonComponents.Responses;
+using ZamboniCommonComponents.Structs;
 
 namespace ZamboniCommonComponents.Bases;
 
@@ -15,6 +16,10 @@ public static class OsdkWebOfferSurveyComponentBase
 
     public enum OsdkWebOfferSurveyComponentNotification : ushort
     {
+        NotifyVotingIssue = 102,
+        NotifyVotingIssueDeleteRequest = 103,
+        NotifyVotingIssue2 = 104,
+        NotifyVoteCastNotificationType = 105
     }
 
     public const ushort Id = 2251;
@@ -51,6 +56,10 @@ public static class OsdkWebOfferSurveyComponentBase
     {
         return notification switch
         {
+            OsdkWebOfferSurveyComponentNotification.NotifyVotingIssue => typeof(VotingIssue),
+            OsdkWebOfferSurveyComponentNotification.NotifyVotingIssueDeleteRequest => typeof(NotifyVotingIssueDeleteRequest),
+            OsdkWebOfferSurveyComponentNotification.NotifyVotingIssue2 => typeof(VotingIssue),
+            OsdkWebOfferSurveyComponentNotification.NotifyVoteCastNotificationType => typeof(VoteCastNotificationType),
             _ => typeof(NullStruct)
         };
     }
@@ -59,6 +68,26 @@ public static class OsdkWebOfferSurveyComponentBase
     {
         public Server() : base(OsdkWebOfferSurveyComponentBase.Id, OsdkWebOfferSurveyComponentBase.Name)
         {
+        }
+
+        public static Task NotifyVotingIssue(BlazeServerConnection connection, VotingIssue notification, bool waitUntilFree = false)
+        {
+            return connection.NotifyAsync(OsdkWebOfferSurveyComponentBase.Id, (ushort)OsdkWebOfferSurveyComponentNotification.NotifyVotingIssue, notification, waitUntilFree);
+        }
+
+        public static Task NotifyVotingIssueDeleteRequest(BlazeServerConnection connection, NotifyVotingIssueDeleteRequest notification, bool waitUntilFree = false)
+        {
+            return connection.NotifyAsync(OsdkWebOfferSurveyComponentBase.Id, (ushort)OsdkWebOfferSurveyComponentNotification.NotifyVotingIssueDeleteRequest, notification, waitUntilFree);
+        }
+
+        public static Task NotifyVotingIssue2(BlazeServerConnection connection, VotingIssue notification, bool waitUntilFree = false)
+        {
+            return connection.NotifyAsync(OsdkWebOfferSurveyComponentBase.Id, (ushort)OsdkWebOfferSurveyComponentNotification.NotifyVotingIssue2, notification, waitUntilFree);
+        }
+
+        public static Task NotifyVoteCastNotificationType(BlazeServerConnection connection, VoteCastNotificationType notification, bool waitUntilFree = false)
+        {
+            return connection.NotifyAsync(OsdkWebOfferSurveyComponentBase.Id, (ushort)OsdkWebOfferSurveyComponentNotification.NotifyVoteCastNotificationType, notification, waitUntilFree);
         }
 
         [BlazeCommand((ushort)OsdkWebOfferSurveyComponentCommand.getSurveyList)]
